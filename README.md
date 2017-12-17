@@ -8,6 +8,15 @@ The API is used to manage users in a MongoDB database.
 ### Development
 This application was developed using [ExpressJS](http://expressjs.com/). MongoDB was used for persisting data with [Mongoose](https://mongoosejs.com/) as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping).
 
+
+### Docker Container / Image Setup
+* This application can be deploy to Docker Container for testing on a local machine
+* Start up your terminal (or Command Prompt on Windows OS).
+* mkdir C:\data\db
+* install Docker on your local machine and run the Command bellow from docker terminal or command Prompt
+* docker-compose up
+* This will Setup 2 Containers linked together. One for the	application and the other for mongodb
+
 ### Installation
 * Start up your terminal (or Command Prompt on Windows OS).
 * Ensure that you've `node` installed on your PC.

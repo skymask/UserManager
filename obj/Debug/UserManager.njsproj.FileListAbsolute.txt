@@ -1,0 +1,2 @@
+C:\Users\Agboola\Source\Repos\UserManager\obj\Debug\UserManager.njsprojResolveAssemblyReference.cache
+C:\Users\Agboola\Source\Repos\UserManager\bin\Microsoft.NodejsTools.WebRole.dll

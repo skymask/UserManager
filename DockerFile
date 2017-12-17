@@ -1,0 +1,28 @@
+############################################################
+# Dockerfile to build Application container images
+# Based on Alpine
+############################################################
+
+# specify the node base image with your desired version node:<version>
+FROM node:alpine
+
+# File Author / Maintainer
+MAINTAINER Agboola Seun
+
+# Update Node.js
+RUN apk add --update nodejs
+
+#Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+COPY package*.json /usr/src/app/
+RUN npm install
+
+# Bundle app source
+COPY . /usr/src/app
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
